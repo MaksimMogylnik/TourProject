@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TourDBModelContainer" CdmEntityContainer="TourDBEntities">
+    <EntitySetMapping Name="Archives">
+      <EntityTypeMapping TypeName="TourDBModel.Archive">
+        <MappingFragment StoreEntitySet="Archive">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="TourDBModel.City">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="TourDBModel.Client">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientFullName" ColumnName="ClientFullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="TourDBModel.Country">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="CoutryID" ColumnName="CoutryID" />
+          <ScalarProperty Name="CoutryName" ColumnName="CoutryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotels">
+      <EntityTypeMapping TypeName="TourDBModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotels">
+          <ScalarProperty Name="HotelID" ColumnName="HotelID" />
+          <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+          <ScalarProperty Name="ImageUri" ColumnName="ImageUri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PayedTours">
+      <EntityTypeMapping TypeName="TourDBModel.PayedTour">
+        <MappingFragment StoreEntitySet="PayedTours">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="TourDBModel.Post">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="PostName" ColumnName="PostName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sights">
+      <EntityTypeMapping TypeName="TourDBModel.Sight">
+        <MappingFragment StoreEntitySet="Sights">
+          <ScalarProperty Name="SightID" ColumnName="SightID" />
+          <ScalarProperty Name="SightName" ColumnName="SightName" />
+          <ScalarProperty Name="CoutryID" ColumnName="CoutryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="ImageUri" ColumnName="ImageUri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TourDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tours">
+      <EntityTypeMapping TypeName="TourDBModel.Tour">
+        <MappingFragment StoreEntitySet="Tours">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="TourName" ColumnName="TourName" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="TransportID" ColumnName="TransportID" />
+          <ScalarProperty Name="MaxPeople" ColumnName="MaxPeople" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TourVisits">
+      <EntityTypeMapping TypeName="TourDBModel.TourVisit">
+        <MappingFragment StoreEntitySet="TourVisits">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="CoutryID" ColumnName="CoutryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="HotelID" ColumnName="HotelID" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transports">
+      <EntityTypeMapping TypeName="TourDBModel.Transport">
+        <MappingFragment StoreEntitySet="Transport">
+          <ScalarProperty Name="TransportID" ColumnName="TransportID" />
+          <ScalarProperty Name="TransportType" ColumnName="TransportType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="TourDBModel.Worker">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="WorkerID" ColumnName="WorkerID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AcceptDate" ColumnName="AcceptDate" />
+          <ScalarProperty Name="IsFired" ColumnName="IsFired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FullTourInfoes">
+      <EntityTypeMapping TypeName="TourDBModel.FullTourInfo">
+        <MappingFragment StoreEntitySet="FullTourInfo">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="TourName" ColumnName="TourName" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="MaxPeople" ColumnName="MaxPeople" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TransportType" ColumnName="TransportType" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+          <ScalarProperty Name="HotelImageUri" ColumnName="HotelImageUri" />
+          <ScalarProperty Name="CoutryName" ColumnName="CoutryName" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="SightName" ColumnName="SightName" />
+          <ScalarProperty Name="SightImageUri" ColumnName="SightImageUri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToursViews">
+      <EntityTypeMapping TypeName="TourDBModel.ToursView">
+        <MappingFragment StoreEntitySet="ToursView">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="TourName" ColumnName="TourName" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="TransportID" ColumnName="TransportID" />
+          <ScalarProperty Name="MaxPeople" ColumnName="MaxPeople" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ResponsibleWorkers" TypeName="TourDBModel.ResponsibleWorkers" StoreEntitySet="ResponsibleWorkers">
+      <EndProperty Name="Tours">
+        <ScalarProperty Name="TourID" ColumnName="TourID" />
+      </EndProperty>
+      <EndProperty Name="Workers">
+        <ScalarProperty Name="WorkerID" ColumnName="WorkerID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="BestArchiveTour" FunctionName="Хранилище TourDBModel.BestArchiveTour" />
+    <FunctionImportMapping FunctionImportName="BestOngoingTour" FunctionName="Хранилище TourDBModel.BestOngoingTour" />
+    <FunctionImportMapping FunctionImportName="CheckInTour" FunctionName="Хранилище TourDBModel.CheckInTour" />
+    <FunctionImportMapping FunctionImportName="CheckLocation" FunctionName="Хранилище TourDBModel.CheckLocation" />
+    <FunctionImportMapping FunctionImportName="CoutryTours" FunctionName="Хранилище TourDBModel.CoutryTours" />
+    <FunctionImportMapping FunctionImportName="MostActiveClient" FunctionName="Хранилище TourDBModel.MostActiveClient">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourDBModel.MostActiveClient_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CountID" ColumnName="CountID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientFullName" ColumnName="ClientFullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MostPopularCountry" FunctionName="Хранилище TourDBModel.MostPopularCountry" />
+    <FunctionImportMapping FunctionImportName="MostPopularHotel" FunctionName="Хранилище TourDBModel.MostPopularHotel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourDBModel.MostPopularHotel_Result">
+          <ScalarProperty Name="HotelID" ColumnName="HotelID" />
+          <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+          <ScalarProperty Name="ImageUri" ColumnName="ImageUri" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SelectTourInDiapazone" FunctionName="Хранилище TourDBModel.SelectTourInDiapazone">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourDBModel.SelectTourInDiapazone_Result">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="TourName" ColumnName="TourName" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="TransportID" ColumnName="TransportID" />
+          <ScalarProperty Name="MaxPeople" ColumnName="MaxPeople" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище TourDBModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище TourDBModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище TourDBModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище TourDBModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourDBModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище TourDBModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourDBModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище TourDBModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище TourDBModel.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="TourByTransport" FunctionName="Хранилище TourDBModel.TourByTransport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TourDBModel.TourByTransport_Result">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="TourName" ColumnName="TourName" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="TransportID" ColumnName="TransportID" />
+          <ScalarProperty Name="MaxPeople" ColumnName="MaxPeople" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TourStory" FunctionName="Хранилище TourDBModel.TourStory" />
+    <FunctionImportMapping FunctionImportName="WorstOngoingTour" FunctionName="Хранилище TourDBModel.WorstOngoingTour" />
+  </EntityContainerMapping>
+</Mapping>

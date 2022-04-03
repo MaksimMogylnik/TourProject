@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="TourProj.UI.Views.TourOrderingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TourProj.UI.Views"
+             xmlns:vm="clr-namespace:TourProj.UI.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{Binding Source={StaticResource locator}, Path=TourOrderingViewModel}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" 
+                    CanVerticallyScroll="True">
+            <StackPanel Margin="3">
+                <Label Content="About tour itself:"
+                       FontWeight="Bold"></Label>
+
+                <Label Content="Tour name:" Margin="3"></Label>
+                <TextBlock Text="{Binding SelectedTour.TourName}"
+                       TextAlignment="Center"></TextBlock>
+
+                <Label Content="Start date:" Margin="3"></Label>
+                <TextBlock Text="{Binding SelectedTour.StartDate}"
+                       TextAlignment="Center"></TextBlock>
+
+                <Label Content="Finish date:" Margin="3"></Label>
+                <TextBlock Text="{Binding SelectedTour.FinishDate}"
+                       TextAlignment="Center"></TextBlock>
+
+                <Label Content="Maximum people:" Margin="3"></Label>
+                <TextBlock Text="{Binding SelectedTour.MaxPeople}"
+                       TextAlignment="Center"></TextBlock>
+
+                <Label Content="Cost:" Margin="3"></Label>
+                <TextBlock Text="{Binding SelectedTour.Cost}"
+                       TextAlignment="Center"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="3">
+                <Label Content="Worker responsible for this tour:"
+                       FontWeight="Bold"></Label>
+
+                <Label Content="Full name:" Margin="3"></Label>
+                <TextBlock Text="{Binding Worker.FullName}"
+                       TextAlignment="Center"></TextBlock>
+
+                <Label Content="Contact phone:" Margin="3"></Label>
+                <TextBlock Text="{Binding Worker.Phone}"
+                       TextAlignment="Center"></TextBlock>
+
+                <Label Content="E-mail:" Margin="3"></Label>
+                <TextBlock Text="{Binding Worker.Email}"
+                       TextAlignment="Center"></TextBlock>
+            </StackPanel>
+
+        </StackPanel>
+
+        <ScrollViewer 
+            HorizontalScrollBarVisibility="Auto"
+            Grid.Column="1">
+            <StackPanel>
+
+                <StackPanel Margin="3">
+                    <Label Content="Where and how tour starts:"
+                       FontWeight="Bold"></Label>
+
+                    <Label Content="Country:" Margin="3"></Label>
+                    <TextBlock Text="{Binding Country.CoutryName}"
+                       TextAlignment="Center"></TextBlock>
+
+                    <Label Content="City:" Margin="3"></Label>
+                    <TextBlock Text="{Binding City.CityName}"
+                       TextAlignment="Center"></TextBlock>
+
+                    <Label Content="Hotel:" Margin="3"></Label>
+                    <TextBlock Text="{Binding Hotel.HotelName}"
+                       TextAlignment="Center"></TextBlock>
+
+                    <Image Height="200"
+                       Width="300"
+                       Stretch="Fill"
+                       Source="{Binding Hotel.ImageUri}"></Image>
+                </StackPanel>
+
+                <StackPanel Margin="3">
+                    <Label Content="Sight example:"
+                       FontWeight="Bold"></Label>
+
+                    <Label Content="Sight:" Margin="3"></Label>
+                    <TextBlock Text="{Binding Sight.SightName}"
+                       TextAlignment="Center"></TextBlock>
+
+                    <Image Height="200"
+                       Width="300"
+                       Stretch="Fill"
+                       Source="{Binding Sight.ImageUri}"></Image>
+                </StackPanel>
+
+                <Grid Margin="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0"
+                        Content="Back"
+                        Command="{Binding BackCommand}"></Button>
+
+                    <Button Grid.Column="1"
+                        Content="Order"
+                        Command="{Binding OrderCommand}"></Button>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

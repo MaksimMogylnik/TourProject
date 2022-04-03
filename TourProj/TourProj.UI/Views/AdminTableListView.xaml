@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="TourProj.UI.Views.AdminTableListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TourProj.UI.Views"
+             xmlns:vm="clr-namespace:TourProj.UI.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <vm:AdminTableListViewModel></vm:AdminTableListViewModel>
+    </UserControl.DataContext>
+    <Grid>
+        <ScrollViewer>
+            <ItemsControl HorizontalAlignment="Stretch">
+                <Button Margin="10"
+                    Content ="Tour Table"
+                    Command="{Binding GetAdminTourTable}"/>
+                <Button Margin="10"
+                    Content ="Archive Tour Table"
+                    Command="{Binding GetAcrhiveTourTable}"/>
+                <Button Margin="10"
+                    Content ="City Table"
+                    Command="{Binding GetCityTable}"/>
+                <Button Margin="10"
+                    Content ="Client Table"
+                    Command="{Binding GetClientTable}"/>
+                <Button Margin="10"
+                    Content ="Country Table"
+                    Command="{Binding GetCountryTable}"/>
+                <Button Margin="10"
+                    Content ="Hotel Table"
+                    Command="{Binding GetHotelTable}"/>
+                <Button Margin="10"
+                    Content ="Payed Tours Table"
+                    Command="{Binding GetPayedTourTable}"/>
+                <Button Margin="10"
+                    Content ="Post Table"
+                    Command="{Binding GetPostTable}"/>
+                <Button Margin="10"
+                    Content ="Sight Table"
+                    Command="{Binding GetSightTable}"/>
+                <Button Margin="10"
+                    Content ="TourVisit Table"
+                    Command="{Binding GetTourVisitTable}"/>
+                <Button Margin="10"
+                    Content ="Transport Table"
+                    Command="{Binding GetTransportTable}"/>
+                <Button Margin="10"
+                    Content ="Worker Table"
+                    Command="{Binding GetWorkerTable}"/>
+                <Button Margin="10"
+                    Content ="Back"
+                    Command="{Binding SetUserList}"/>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

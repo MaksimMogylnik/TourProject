@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\TourProj.DAL.dll.config
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\TourProj.DAL.dll
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\TourProj.DAL.pdb
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\TourProj\TourProj.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\TourProj\TourProj.DAL\obj\Debug\TourProj.DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\TourProj\TourProj.DAL\obj\Debug\TourProj.DAL.csproj.CopyComplete
+C:\Users\User\source\repos\TourProj\TourProj.DAL\obj\Debug\TourProj.DAL.dll
+C:\Users\User\source\repos\TourProj\TourProj.DAL\obj\Debug\TourProj.DAL.pdb
+C:\Users\User\source\repos\TourProj\TourProj.DAL\obj\Debug\TourProj.DAL.csprojAssemblyReference.cache
